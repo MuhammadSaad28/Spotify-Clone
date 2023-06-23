@@ -1,0 +1,120 @@
+body {
+    background-color: aquamarine;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: whitesmoke;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+.brand img {
+    width: 45px;
+}
+
+.container {
+    margin: 20px 10%;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    min-height: 440px;
+    border-radius: 20px;
+    background-image: url("./bg1.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.songlist {
+    padding: 12px;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.range {
+    width: 80%;
+    max-width: 980px;
+}
+
+.icons {
+    padding: 9px;
+}
+
+.songitemcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:20px;
+}
+.songitem {
+    background-color: orange;
+    color: black;
+    width: 280px;
+    height: 20px;
+    padding: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.songitem img {
+    width: 30px;
+    margin: 0 23px -12px 0;
+}
+
+.songitem i {
+    cursor: pointer;
+}
+
+/* Media queries for responsive styles */
+@media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .container {
+        margin: 20px 5%;
+    }
+
+    .range {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Styles for mobile screens */
+    .container {
+        margin: 20px 2%;
+    }
+
+    .songitem {
+        width: 90%;
+    }
+}
