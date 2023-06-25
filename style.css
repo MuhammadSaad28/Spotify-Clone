@@ -70,6 +70,9 @@ nav ul li {
 .icons {
     padding: 9px;
 }
+.icons i{
+    cursor: pointer;
+}
 
 .songitemcontainer {
     display: flex;
